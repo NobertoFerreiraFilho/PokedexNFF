@@ -1,18 +1,15 @@
-import { React, useEffect, useState } from "react";
+import  React, { useEffect, useState } from "react";
 //API
-import {
-  GetPokeDatasSpecies,
-  GetPokemonData,
-  searchPokemon,
-} from "../api";
+import { GetPokeDatasSpecies, GetPokemonData, searchPokemon } from "../api";
 //Router
 import { useLocation, useParams } from "react-router-dom";
 //components
 import DetailsHeader from "../components/DetailsHeader/DetailsHeader";
 import Navbar from "../components/Navbar/Navbar";
+import Spinner from "../components/Spinner";
 
 const PokeDetails = () => {
-  const { name } = useParams();
+  const { pokeId } = useParams();
   //Bringing info from BigCard components trought Navigate/Location from React-router lib.
   const location = useLocation();
 
@@ -31,7 +28,7 @@ const PokeDetails = () => {
       try {
         setLoading(true);
         setNotFound(false);
-        const result = await GetPokeDatasSpecies(name);
+        const result = await GetPokeDatasSpecies(pokeId);
         if (!result) {
           setNotFound(true);
         } else {
@@ -54,7 +51,7 @@ const PokeDetails = () => {
       try {
         setLoading(true);
         setNotFound(false);
-        const result = await searchPokemon(name);
+        const result = await searchPokemon(pokeId);
         if (!result) {
           setNotFound(true);
         } else {
@@ -121,13 +118,13 @@ const PokeDetails = () => {
   return (
     <div
       style={{
-        background: `url('pokemon_wallpaper01_1680_v3.jpg')`,
-        backgroundSize: "contain",
-        maxWidth: "100vw",
-        backgroundRepeat: "repeaty",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Navbar />
+      {loading && <Spinner />}
       {location.state !== null && evolutionChain && (
         <DetailsHeader
           pokeSpecies={location.state[1]}
@@ -135,7 +132,7 @@ const PokeDetails = () => {
           pokeData={location.state[0]}
         />
       )}
-      {location.state == null &&
+      {location.state === null &&
         pokeDataSpecies &&
         evolutionChain &&
         pokeData && (
