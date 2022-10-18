@@ -6,7 +6,7 @@
 
 # Pokedex with React Js
 
-<img src='../pokedex_nf/src/image/Pokedex-Homepage.gif' width=356/> <img src='../pokedex_nf/src/image/Pokedex-DetailsPage.gif' width=450/>
+<img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/Pokedex-Homepage.gif' width=356/> <img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/Pokedex-DetailsPage.gif' width=450/>
 
 This project was created by Noberto Ferreira Filho with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -25,7 +25,7 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 
 ### 1st PAGE: HomePage:
 
-<img src='../pokedex_nf/src/image/Homepage.jpg' Width='750'/>
+<img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/Homepage.jpg' Width='750'/>
 
 >#### :hammer: Homepage Features
 >
@@ -38,7 +38,7 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 >
 ### MODAL Card:
 
-<img src='../pokedex_nf/src/image/Modal(homepage).jpg' width='750'/>
+<img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/Modal(homepage).jpg' width='750'/>
 
 >#### :hammer: Modal Features
 >
@@ -47,7 +47,7 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 >
 ### 2nd PAGE:
 
-<img src='../pokedex_nf/src/image/DetailsPage.jpg' width='750'/>
+<img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/DetailsPage.jpg' width='750'/>
 
 >#### :hammer: Details Page Features
 >
