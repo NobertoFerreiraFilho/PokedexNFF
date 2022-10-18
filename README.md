@@ -13,6 +13,7 @@ This project was created by Noberto Ferreira Filho with [Create React App](https
 That's a responsive Pokedex Web Application using **ReactJs**. This project was created in order to practice several programming skills and technics.
 
 <p align='center'>
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
 <img src='https://img.shields.io/static/v1?label=Status&message=DONE&color=brightgreen'>
 <img src='https://img.shields.io/github/stars/NobertoFerreiraFilho/PokedexNFF'>
 <img src='https://img.shields.io/github/forks/NobertoFerreiraFilho/PokedexNFF'>
