@@ -38,8 +38,8 @@ const DetailsHeader = (props) => {
   const [chainData, setChainData] = useState();
   const [typeData, setTypeData] = useState();
   const [loading, setLoading] = useState(false);
-  const [notFound, setNotFound] = useState(false);
-
+  const [typeNotFound, setTypeNotFound] = useState(false);
+  const [chainNotFound, setChainNotFound] = useState(false);
 
   const url_photo = [
     `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${pokeSpecies.id}.png`,
@@ -47,11 +47,10 @@ const DetailsHeader = (props) => {
     `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokeSpecies.id}.svg`,
   ];
 
-
   const fetchType = async () => {
     try {
       setLoading(true);
-      setNotFound(false);
+      setTypeNotFound(false);
 
       const promises = pokeData.types.map(async (pokemon) => {
         return await GetPokemonData(pokemon.type.url); //Make all the requests to the API for each url of each pokemon
@@ -60,8 +59,9 @@ const DetailsHeader = (props) => {
       const results = await Promise.all(promises); //Promise.all gather the list of promises and the "await" waits then to be answered. So It can give the results the final results.
 
       if (!results) {
-        setNotFound(true);
+        setTypeNotFound(true);
       } else {
+        setTypeNotFound(false);
         setTypeData(results);
       }
       setLoading(false);
@@ -77,7 +77,7 @@ const DetailsHeader = (props) => {
   const fetchChain = async () => {
     try {
       setLoading(true);
-      setNotFound(false);
+      setChainNotFound(false);
 
       if (
         chain.evolves_to.length > 0 &&
@@ -112,7 +112,7 @@ const DetailsHeader = (props) => {
         }
 
         if (!results) {
-          setNotFound(true);
+          setChainNotFound(true);
         } else {
           setChainData(results);
         }
@@ -162,13 +162,17 @@ const DetailsHeader = (props) => {
                 icon={faChevronLeft}
                 size="1x"
                 color="white"
-                onClick={() => {photo>0 && setPhoto(photo-1)}}
+                onClick={() => {
+                  photo > 0 && setPhoto(photo - 1);
+                }}
               />
               <FontAwesomeIcon
                 icon={faChevronRight}
                 size="1x"
                 color="white"
-                onClick={() => {photo<2 && setPhoto(1+parseInt(photo))}}
+                onClick={() => {
+                  photo < 2 && setPhoto(1 + parseInt(photo));
+                }}
               />
             </Buttons>
           </ShowcaseTop>
@@ -181,13 +185,18 @@ const DetailsHeader = (props) => {
                     icon={faChevronLeft}
                     size="1x"
                     color="white"
-                    onClick={() => {flavorText > 0 && setFlavorText(flavorText-1)}}
+                    onClick={() => {
+                      flavorText > 0 && setFlavorText(flavorText - 1);
+                    }}
                   />
                   <FontAwesomeIcon
                     icon={faChevronRight}
                     size="1x"
                     color="white"
-                    onClick={() => {flavorText < pokeSpecies.flavor_text_entries.length && setFlavorText(parseInt(flavorText)+1)}}
+                    onClick={() => {
+                      flavorText < pokeSpecies.flavor_text_entries.length &&
+                        setFlavorText(parseInt(flavorText) + 1);
+                    }}
                   />
                 </Buttons>
                 {pokeSpecies.flavor_text_entries[flavorText].flavor_text}
@@ -241,10 +250,12 @@ const DetailsHeader = (props) => {
                 <p className="title">Growth rate:</p>
                 <p className="data"> {pokeSpecies.growth_rate.name}</p>
               </div>
-              <div>
-                <p className="title">Shape:</p>
-                <p className="data"> {pokeSpecies.shape.name}</p>
-              </div>
+              {pokeSpecies.shape !== null && (
+                <div>
+                  <p className="title">Shape:</p>
+                  <p className="data"> {pokeSpecies.shape.name}</p>
+                </div>
+              )}
             </PhysicalInfo>
             <h3>Fight Attrib. </h3>
             <FightInfo>
@@ -264,10 +275,13 @@ const DetailsHeader = (props) => {
           </ShowcaseSide>
           <ShowcaseBottom className="bottom-info">
             <TypeInfo>
-              <div className="Strenght">
-                <h4>Strenght:</h4>
-                {typeData &&
-                  typeData.map((type, index) => (
+              {typeNotFound === true || typeData === undefined ? (
+                <h2>Type info: Undefined</h2>
+              ) : (
+                <>
+                  <div className="Strenght">
+                    <h4>Strenght:</h4>
+                    {typeData.map((type, index) => (
                     <div key={type.name} className="TypeDetails">
                       <h4 key={index}>{type.name}</h4>
                       <div className="typeData">
@@ -301,12 +315,11 @@ const DetailsHeader = (props) => {
                         )}
                       </div>
                     </div>
-                  ))}
-              </div>
-              <div className="weakness">
-                <h4>Weakness:</h4>
-                {typeData &&
-                  typeData.map((type, index) => (
+                    ))}
+                  </div>
+                  <div className="weakness">
+                    <h4>Weakness:</h4>
+                    {typeData.map((type, index) => (
                     <div className="TypeDetails">
                       <h4 key={index}>{type.name}</h4>
                       <div className="typeData">
@@ -340,19 +353,29 @@ const DetailsHeader = (props) => {
                         )}
                       </div>
                     </div>
-                  ))}
-              </div>
+                    ))}
+                  </div>
+                </>
+              )}
             </TypeInfo>
-            <Text>
-              <h4>Evolution Chain:</h4>
-            </Text>
-            <Link to={`/Details/${chosenPokemon.name}`} reloadDocument>
-              <Grid
-                pokemons={chainData}
-                loading={loading}
-                openBigCard={changePoke}
-              />
-            </Link>
+            {chainNotFound ? (
+              <Text>
+                <h2>Evolution Chain: undefined</h2>
+              </Text>
+            ) : (
+              <>
+                <Text>
+                  <h4>Evolution Chain:</h4>
+                </Text>
+                <Link to={`/Details/${chosenPokemon.name}`} reloadDocument>
+                  <Grid
+                    pokemons={chainData}
+                    loading={loading}
+                    openBigCard={changePoke}
+                  />
+                </Link>
+              </>
+            )}
           </ShowcaseBottom>
         </GeneralInfo>
       </Wrapper>
