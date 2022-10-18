@@ -1,6 +1,110 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div style='display:flex; flex-direction:column; align-items:center; background-color: rgba(10, 20, 40, 1); height:150px'>
+<img src='https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png' height='100'></img>
+<p style='color: white'>By Noberto Ferreira filho</p>
+</div>
+
+# Pokedex with React Js
+
+<img src='../pokedex_nf/src/image/Pokedex-Homepage.gif' width=356/> <img src='../pokedex_nf/src/image/Pokedex-DetailsPage.gif' width=450/>
+
+This project was created by Noberto Ferreira Filho with [Create React App](https://github.com/facebook/create-react-app).
+
+That's a responsive Pokedex Web Application using **ReactJs**. This project was created in order to practice several programming skills and technics.
+
+<p align='center'>
+<img src='https://img.shields.io/static/v1?label=Status&message=DONE&color=brightgreen'>
+<img src='https://img.shields.io/github/stars/NobertoFerreiraFilho/PokedexNFF'>
+<img src='https://img.shields.io/github/forks/NobertoFerreiraFilho/PokedexNFF'>
+<img src='https://img.shields.io/github/issues/NobertoFerreiraFilho/PokedexNFF'>
+</p>
+
+---
+
+## :hammer: Application Features
+
+### 1st PAGE: HomePage:
+
+<img src='../pokedex_nf/src/image/Homepage.jpg' Width='750'/>
+
+>#### :hammer: Homepage Features
+>
+>1. Grid + Pagination + itens per page selection
+>2. Search Bar that reloads the Grid every typed letter and erases when the input is empty.
+>3. A Type filter bar that reloads the Grid with all pokemon of the chosen type in only 1 page + Reset filter button
+>4. A Sticky NavBar with:
+>    - Go to the Top + Go to the Bottom Buttons
+>    - External Link to Githubs page.
+>
+### MODAL Card:
+
+<img src='../pokedex_nf/src/image/Modal(homepage).jpg' width='750'/>
+
+>#### :hammer: Modal Features
+>
+>1. MODAL Card with more details of the chosen Pokemon opened by >clicking on the small cards of the grid
+>2. Link to the MORE DETAILS page.
+>
+### 2nd PAGE:
+
+<img src='../pokedex_nf/src/image/DetailsPage.jpg' width='750'/>
+
+>#### :hammer: Details Page Features
+>
+>1. Image with selection (3 options)
+>2. Text description of the pokemon with all the text options available in the API, selected by the arrow pagination button
+>3. Several details Tabels from diferents API url.
+>4. Evolution Chain Grid + reload the page with the new chosen pokemon details by clicking on one of the small card at the bottom.
+>5. A pagination that reloads the page with the next pokemon on the list using its ID.
+>6. A Sticky NavBar with:
+>       - Logo with link to the Homepage
+>       - Go to the Top + Go to the Bottom Buttons
+>       - External Link to Githubs page.
+
+---
+
+## Technics, Technologies and Dependences used:
+
+<ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
+<il>
+<p style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center; margin-left:1px'>React Js</p>
+</il>
+<il>
+<p style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CSS3 / HTML5</p>
+</il>
+<il>
+<p style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;'>GitHub</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CI/CD</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,30, 1); color:white; width:295px; border-radius: 10px; text-align:center;margin-left:4px'>Functional components: Arrow function</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Flexbox</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,30, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>Conditional Rendering</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Styled-Components</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Font-Awesome</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>React-Router</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,130, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>API consuming: Axios</p>
+</il>
+<il>
+<p style='background-color: rgba(30,30,130, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>API consuming: Fetch</p>
+</il>
+</ul>
+
+---
 
 ## Available Scripts
 
