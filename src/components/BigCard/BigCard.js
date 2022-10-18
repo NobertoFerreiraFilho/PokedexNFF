@@ -101,7 +101,7 @@ const BigCard = (props) => {
         <Footer>
           <p
             onClick={() => {
-              Navigate(`/Details/${chosenPokemon.name}`, {
+              Navigate(`/Details/${chosenPokemon.id}`, {
                 state: [chosenPokemon, species[0]],
               });
             }}
