@@ -9,7 +9,8 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   z-index: 10;
-  margin: 0.3rem auto;
+  margin: 0.1rem auto;
+  background-color: rgba(20,20,20, 0.7);
 
   .pink {
     background-image: radial-gradient(circle, #ffb4e6, #bc83a3, #7b5567, #3e2c33, #000000);
