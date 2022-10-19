@@ -1,8 +1,5 @@
 
-<div style='display:flex; flex-direction:column; align-items:center; background-color: rgba(10, 20, 40, 1); height:150px'>
-<img src='https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png' height='100'></img>
-<p style='color: white'>By Noberto Ferreira filho</p>
-</div>
+<img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/NavBar.jpg'/>
 
 # Pokedex with React Js
 
