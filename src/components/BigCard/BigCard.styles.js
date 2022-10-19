@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   z-index: 10;
-  margin: 0.1rem auto;
+  margin: 0rem auto;
   background-color: rgba(20,20,20, 0.7);
 
   .pink {
@@ -42,7 +42,21 @@ export const Wrapper = styled.div`
   .black {
     background-image: radial-gradient(circle, #454444, #353434, #252425, #161616, #000000);
     }
-  
+    `;
+
+export const PokeDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 600px;
+  border: 2px solid #d8c974;
+  border-radius: 15px;
+  background-color: rgba(70, 70, 70, 1);
+  box-shadow: inset 0px 15px 30px -1px #000, inset 0px -15px 30px -1px #000;
+  transition-duration: 0.25s;
+  margin-top: 2rem;
 
   animation: mymove 0.4s ease-in-out 1 normal;
   @keyframes mymove {
@@ -67,25 +81,11 @@ export const Wrapper = styled.div`
       transform: rotatey(600deg);
     }
   }
-
+  
   @media screen and (max-height: 600px) {
     position: absolute;
   }
-`;
-
-export const PokeDetails = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 450px;
-  height: 600px;
-  border: 2px solid #d8c974;
-  border-radius: 15px;
-  background-color: rgba(70, 70, 70, 1);
-  box-shadow: inset 0px 15px 30px -1px #000, inset 0px -15px 30px -1px #000;
-  transition-duration: 0.25s;
-
+  
   `;
 
 export const Header = styled.div`
