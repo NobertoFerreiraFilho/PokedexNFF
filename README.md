@@ -66,10 +66,16 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 <ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
 <il>
 <code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center; margin-left:1px'>React Js</code>
-</il><il><code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CSS3 / HTML5</code></il>
-<il>
-<code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;'>GitHub</code>
 </il>
+<il>
+<code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CSS3 / HTML5</code>
+</il>
+<il>
+<code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>GitHub</code>
+</il>
+</ul>
+
+<ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
 <il>
 <code style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CI/CD</code>
 </il>
@@ -85,6 +91,9 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 <il>
 <code style='background-color: rgba(30,30,30, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>Conditional Rendering</code>
 </il>
+</ul>
+
+<ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
 <il>
 <code style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Styled-Components</code>
 </il>
