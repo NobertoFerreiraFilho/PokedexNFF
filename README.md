@@ -13,7 +13,7 @@ This project was created by Noberto Ferreira Filho with [Create React App](https
 That's a responsive Pokedex Web Application using **ReactJs**. This project was created in order to practice several programming skills and technics.
 
 <p align='center'>
-<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&logo=REACT"/>
 <img src='https://img.shields.io/static/v1?label=Status&message=DONE&color=brightgreen'>
 <img src='https://img.shields.io/github/stars/NobertoFerreiraFilho/PokedexNFF'>
 <img src='https://img.shields.io/github/forks/NobertoFerreiraFilho/PokedexNFF'>
@@ -68,40 +68,40 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 
 <ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
 <il>
-<p style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center; margin-left:1px'>React Js</p>
+<code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center; margin-left:1px'>React Js</code>
+</il><il><code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CSS3 / HTML5</code></il>
+<il>
+<code style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;'>GitHub</code>
 </il>
 <il>
-<p style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CSS3 / HTML5</p>
+<code style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CI/CD</code>
 </il>
 <il>
-<p style='background-color: gray; color:white; width:170px; border-radius: 10px; text-align:center;'>GitHub</p>
+<code style='background-color: rgba(30,30,30, 1); color:white; width:295px; border-radius: 10px; text-align:center;margin-left:4px'>Functional components: Arrow function</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>CI/CD</p>
+<code style='background-color: rgba(30,30,30, 1); color:white; width:295px; border-radius: 10px; text-align:center;margin-left:4px'>JSX syntax</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,30, 1); color:white; width:295px; border-radius: 10px; text-align:center;margin-left:4px'>Functional components: Arrow function</p>
+<code style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Flexbox</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,30, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Flexbox</p>
+<code style='background-color: rgba(30,30,30, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>Conditional Rendering</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,30, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>Conditional Rendering</p>
+<code style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Styled-Components</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Styled-Components</p>
+<code style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Font-Awesome</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>Font-Awesome</p>
+<code style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>React-Router</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,130, 1); color:white; width:170px; border-radius: 10px; text-align:center;margin-left:4px'>React-Router</p>
+<code style='background-color: rgba(30,30,130, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>API consuming: Axios</code>
 </il>
 <il>
-<p style='background-color: rgba(30,30,130, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>API consuming: Axios</p>
-</il>
-<il>
-<p style='background-color: rgba(30,30,130, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>API consuming: Fetch</p>
+<code style='background-color: rgba(30,30,130, 1); color:white; width:180px; border-radius: 10px; text-align:center;margin-left:4px'>API consuming: Fetch</code>
 </il>
 </ul>
 
