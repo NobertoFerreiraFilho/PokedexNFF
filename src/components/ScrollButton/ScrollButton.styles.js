@@ -11,8 +11,9 @@ export const Wrapper = styled.div`
   cursor: pointer;
   scale: 0.8;
   @media screen and (max-width: 600px) {
-    flex-direction: row;
-    height: 100%;
+    position: absolute;
+    top:5vh;
+    left: 80vw;
   }
 `;
 export const Content = styled.div`
@@ -25,10 +26,9 @@ export const Content = styled.div`
   width: 40px;
   padding: 0.1rem;
   margin: 0.2rem 2rem;
-  :hover{
+  :hover {
     scale: 1.15;
   }
-  
 `;
 export const Text = styled.div`
   text-decoration: none;

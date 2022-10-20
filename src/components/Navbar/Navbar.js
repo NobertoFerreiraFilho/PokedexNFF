@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
 import ScrollButton from "../ScrollButton/ScrollButton";
 //styles
-import { Content, GitButton, Wrapper } from "./Navbar.styles";
+import { Content, ContentLogo, GitButton, Wrapper } from "./Navbar.styles";
 
 const Navbar = (props) => {
   const { SearchHandler, searchOn } = props;
@@ -15,16 +15,21 @@ const Navbar = (props) => {
   return (
     <Wrapper>
       <Content>
-        <Link to="/" reloadDocument>
-          <img alt="poke-Photo" src={logoImg} />
-          <p>By Noberto Ferreira Filho</p>
-        </Link>
+        <ContentLogo>
+          <Link className="logo" to="/" reloadDocument>
+            <img alt="poke-Photo" src={logoImg} />
+            <p>By Noberto Ferreira Filho</p>
+          </Link>
+        </ContentLogo>
         {searchOn && <SearchBar onSearch={SearchHandler} />}
-        <a href='https://github.com/NobertoFerreiraFilho/PokedexNFF' target='_blank'>
-        <GitButton >Go to Noberto's GitHub</GitButton>
+        <a
+          href="https://github.com/NobertoFerreiraFilho/PokedexNFF"
+          target="_blank"
+        >
+          <GitButton>Go to Noberto's GitHub</GitButton>
         </a>
-        <ScrollButton />
       </Content>
+      <ScrollButton />
     </Wrapper>
   );
 };

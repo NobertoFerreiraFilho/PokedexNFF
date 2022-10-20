@@ -81,15 +81,15 @@ export const PokeDetails = styled.div`
     }
   }
   
-  @media screen and (max-height: 600px) {
-    scale: 0.75;
-    margin-top: 0rem;
-    translate: 0px -70px;
-  }
-  @media screen and (max-height: 400px) {
+  @media screen and (max-height: 768px) {
     scale: 0.65;
     margin-top: 0rem;
-    translate: 0px -80px;
+    translate: 0px -100px;
+  }
+  @media screen and (max-height: 600px) {
+    scale: 0.60;
+    margin-top: 0rem;
+    translate: 0px -120px;
   }
   
   `;

@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   position: sticky;
+  align-items: center;
+  justify-content: center;
   top: 0vh;
   width: 100%;
   margin: auto;
@@ -20,19 +22,46 @@ export const Content = styled.div`
   max-width: 1660px;
   height: 120px;
   margin: auto;
+
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+`;
+
+export const ContentLogo = styled.div`
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   img {
     height: 80px;
+    margin: 0rem;
   }
 
   p {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    margin: 0rem;
   }
 
   @media screen and (max-width: 600px) {
-    flex-direction: column;
+    margin: 0rem;
+    justify-content: flex-start;
     height: 100%;
+
+    img {
+      height: 55px;
+    }
+
+    p {
+      font-size: 0.5rem;
+    }
   }
 `;
 
@@ -43,4 +72,7 @@ export const GitButton = styled.button`
   border-radius: 5px;
   cursor: pointer;
   background-color: rgba(0, 150, 220, 0.8);
+  @media screen and (max-width: 600px) {
+    scale: 0.85;
+  }
 `;
