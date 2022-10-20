@@ -25,7 +25,7 @@ const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Details/:pokeId" element={<PokeDetails />} />
+      <Route path="/details/:pokeId" element={<PokeDetails />} />
       <Route
         path="*"
         element={
