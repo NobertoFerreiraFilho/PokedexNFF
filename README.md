@@ -3,8 +3,7 @@
 
 # Pokedex with React Js
 
-Click on the link below and have fun!!
-https://pokedexnff.netlify.app
+Click on the link and have fun!! -> https://pokedexnff.netlify.app
 
 <img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/Pokedex-Homepage.gif' width=356/> <img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/Pokedex-DetailsPage.gif' width=450/>
 
