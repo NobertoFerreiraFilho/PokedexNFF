@@ -20,7 +20,7 @@ const Navbar = (props) => {
           <p>By Noberto Ferreira Filho</p>
         </Link>
         {searchOn && <SearchBar onSearch={SearchHandler} />}
-        <a href='https://github.com/NobertoFerreiraFilho/PokedexNF' target='_blank'>
+        <a href='https://github.com/NobertoFerreiraFilho/PokedexNFF' target='_blank'>
         <GitButton >Go to Noberto's GitHub</GitButton>
         </a>
         <ScrollButton />
