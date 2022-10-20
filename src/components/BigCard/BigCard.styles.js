@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   display: flex;
   position: fixed;
   justify-content: center;
-  align-items: stretch;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -83,7 +82,14 @@ export const PokeDetails = styled.div`
   }
   
   @media screen and (max-height: 600px) {
-    position: absolute;
+    scale: 0.75;
+    margin-top: 0rem;
+    translate: 0px -70px;
+  }
+  @media screen and (max-height: 400px) {
+    scale: 0.65;
+    margin-top: 0rem;
+    translate: 0px -80px;
   }
   
   `;
