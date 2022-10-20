@@ -8,7 +8,7 @@ import Home from "./Pages/Home";
 import PokeDetails from "./Pages/PokeDetails";
 
 
-const theme = {
+/* const theme = {
   colors: {
     
   },
@@ -17,7 +17,7 @@ const theme = {
     secondBreakPoint: '768px',
     thirdBreakPoint: '600px',
   }
-}
+} */
 
 
 

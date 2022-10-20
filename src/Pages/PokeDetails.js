@@ -121,6 +121,7 @@ const PokeDetails = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        maxWidth: "98vw",
       }}
     >
       <Navbar />

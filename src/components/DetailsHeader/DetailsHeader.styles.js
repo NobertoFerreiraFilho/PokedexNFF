@@ -125,25 +125,6 @@ export const Wrapper = styled.div`
     min-width: 450px;
   }
 
-  /*   animation: mymove 0.4s ease-in-out 1 normal forwards;
-  @keyframes mymove {
-    0% {
-
-      transform: translate(0vw, 0px);
-    }
-    25% {
-      transform: translate(-25vw, 0px);
-    }
-    50% {
-      transform: translate(-50vw, 0px);
-    }
-    75% {
-      transform: translate(-75vw, 0px);
-    }
-    100% {
-      transform: rotatey(-150vw, 0px);
-    }
-  } */
 `;
 
 export const GeneralInfo = styled.div`
