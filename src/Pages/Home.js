@@ -167,7 +167,7 @@ const Home = () => {
       style={{
         background: `url('pokemon_wallpaper01_1680_v3.jpg')`,
         backgroundSize: "contain",
-        maxWidth: "100vw",
+        maxWidth: "98vw",
         backgroundRepeat: "repeaty",
       }}
     >
