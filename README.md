@@ -107,7 +107,7 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 <il>
 <img src='https://img.shields.io/badge/Conditional%20Rendering-black?logo=Conditional-Rendering'/>
 </il>
-</ul>>
+</ul>
 
 <ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
 <il>
