@@ -105,6 +105,9 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 <img src='https://img.shields.io/badge/React%20Hooks-black?logo=React-Hooks'/>
 </il>
 <il>
+<img src='https://img.shields.io/badge/Custom%20Hook-black?logo=Custom-Hook'/>
+</il>
+<il>
 <img src='https://img.shields.io/badge/Conditional%20Rendering-black?logo=Conditional-Rendering'/>
 </il>
 </ul>
