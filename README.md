@@ -1,7 +1,8 @@
 
 <img src='https://github.com/NobertoFerreiraFilho/PokedexNFF/blob/master/src/image/NavBar.jpg'/>
 
-# Pokedex with React Js ![LastModifyBadge](https://img.shields.io/github/last-commit/NobertoFerreiraFilho/pokedexnff?style=plastic)
+# Pokedex with React Js 
+![LastModifyBadge](https://img.shields.io/github/last-commit/NobertoFerreiraFilho/pokedexnff?style=plastic)
 
 Click on the link and have fun!! -> https://pokedexnff.netlify.app
 
