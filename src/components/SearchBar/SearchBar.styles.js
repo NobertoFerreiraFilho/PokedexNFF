@@ -40,7 +40,3 @@ export const Content = styled.div`
     }
   }
 `;
-
-export const Text = styled.div``;
-
-export const Image = styled.img``;
