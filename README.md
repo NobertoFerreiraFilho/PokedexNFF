@@ -90,7 +90,7 @@ That's a responsive Pokedex Web Application using **ReactJs**. This project was 
 
 <ul style='display:flex; flex-wrap: wrap; justify-content:center;'>
 <il>
-<img src='https://img.shields.io/badge/CI%20-CI-black?logo=CI-CD'/>
+<img src='https://img.shields.io/badge/CI%20CD-black?logo=CI-CD'/>
 </il>
 <il>
 <img src='https://img.shields.io/badge/Functional%20Component-black?logo=Functional-Component'/>
